@@ -1,0 +1,79 @@
+*{
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgb(233, 245, 255);
+}
+.welcome-text{
+    color:rgb(30, 58, 95);
+    padding-top: 50px;
+}
+.quick-access-button{
+    color: rgb(30, 58, 95);
+    height: 60px;
+    width: 270px;
+    border-radius: 5px;
+    border : none;
+}
+.quick-access-button:hover{
+    border: 2px solid white;
+}
+#opacAccess{
+    background-color: rgb(253, 235, 175);
+}
+#myBorrowingsAccess{
+    background-color: rgb(155, 241, 197);
+}
+#myReservationsAccess{
+    background-color: rgb(141, 201, 230);
+}
+#renewBookAccess{
+    background-color: rgb(216, 196, 255);
+}
+#addReservationAccess{
+    background-color: rgb(255, 177, 204);
+}
+
+.icon-img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.number-count{
+    font-size:x-large;
+}
+.sub-text{
+    color:rgb(30, 58, 95);
+}
+
+.book-cards{
+    border: none;
+    width: 89px;
+}
+.card-current-borrowings{
+    background-color: rgba(30, 58, 95,0.1);
+    border-radius: 5px;
+    width: 1020px;
+}
+.card-current-reservations{
+    background-color: rgba(30, 58, 95,0.1);
+    border-radius: 5px;
+    width: 420px;
+}
+.card-recomendedforyou{
+    background-color: rgba(30, 58, 95,0.2);
+    border-radius: 5px;
+    width: 720px;
+}
+.card-newarrivals{
+    background-color: rgba(30, 58, 95,0.2);
+    border-radius: 5px;
+    width: 720px;
+}
+.book-img{
+    width: 89px;
+    height: 132px;
+    border-radius: 5px;
+}

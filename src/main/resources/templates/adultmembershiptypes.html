@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head th:replace="~{headerfragment::headFragment}"></head>
+    <link rel="stylesheet" href="resources/css/website.css">
+</head>
+<body >
+<header>
+    <nav class="navbar">
+        <img  src="/resources/images/library.png" id="imgLogo">
+        <div>
+            <h3 class="library-name fw-bold">Book Bar Library</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="normal-text fw-bold">Home</a></li>
+            <li><a href="/aboutus" class="normal-text fw-bold">About Us</a></li>
+            <li><a href="/librarypolicy" class="normal-text fw-bold">Library Policy</a></li>
+            <li><a href="/opac" class="normal-text fw-bold">Catalog</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="/login"><button class="btn nav-bar-button fw-bold">Member Login</button></a>
+        </div>
+    </nav>
+</header>
+<section >
+    <div class="about-text">
+        <h1 class="fw-bold text-center mt-4">Book Bar Library - Adult Membership Types</h1>
+        <div class="card m-3 p-3">
+            <div class="card-body">
+                <table class=" table  table-bordered" id="tableAdultMembershipTypes">
+                    <thead id="tableHeadAdultMembershipTypes" class="table-head text-center">
+                    <tr>
+                        <th>#</th>
+                        <th>Membership Type</th>
+                        <th>Membership Fee (Rs.)</th>
+                        <th>Renewal Fee (Rs.)</th>
+                        <th>Borrow Limit (Books)</th>
+                        <th>Borrow Duration (Days)</th>
+                        <th>Reservation Limit (Books)</th>
+                        <th>Reservation Duration (Days)</th>
+                        <th>Reservation Fee (Rs.)</th>
+                        <th>Delay Fine Fee (Rs.)</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBodyAdultMembershipTypes" class="table-body text-center">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***************** FOOTER ***************** -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4  class="footer-title fw-bold">Opening Hours</h4>
+            <p>Monday: 9am - 5pm</p>
+            <p>Tuesday: 9am - 5pm</p>
+            <p>Wednesday: 9am - 5pm</p>
+            <p>Thursday: 9am - 5pm</p>
+            <p>Friday: 9am - 5pm</p>
+            <p>Saturday: 9am - 5pm</p>
+            <p>Sunday: Closed</p>
+            <p>Poya & Mercantile Holidays are closed </p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Quick Links</h4>
+            <p><a href="/" class="normal-text fw-bold">Home</a></p>
+            <p><a href="/opac" class="normal-text fw-bold">Catalog</a></p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Contact</h4>
+            <p>24/A, School Street, Padukka.</p>
+            <p>Email: info@bookbarlibrary.lk</p>
+            <p>Phone: 011 123 4567</p>
+        </div>
+    </div>
+
+    <p class="copyright">2026 | All Rights Reserved | Book Bar Library</p>
+</footer>
+<div th:replace="~{footerfragment::bottomFragment}"></div>
+<script src="controljs/adultmembershiptypes.js"></script>
+</body>
+</html>

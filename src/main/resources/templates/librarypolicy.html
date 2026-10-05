@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{headerfragment::headFragment}"></head>
+<head>
+    <link rel="stylesheet" href="resources/css/website.css">
+</head>
+<body >
+<header>
+    <nav class="navbar">
+        <img  src="/resources/images/library.png" id="imgLogo">
+        <div>
+            <h3 class="library-name fw-bold">Book Bar Library</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="normal-text fw-bold">Home</a></li>
+            <li><a href="/aboutus" class="normal-text fw-bold">About Us</a></li>
+            <li><a href="/librarypolicy" class="normal-text fw-bold">Library Policy</a></li>
+            <li><a href="/opac" class="normal-text fw-bold">Catalog</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="/login"><button class="btn nav-bar-button fw-bold">Member Login</button></a>
+        </div>
+    </nav>
+</header>
+<section >
+    <div class="about-text">
+        <h1 class="fw-bold text-center mt-4 mb-0">Book Bar Library - Policies</h1>
+        <div class="p-5 justify-content-center m-3 mt-0">
+            <p>Welcome to Book Bar Library, a modern library designed to provide
+                a peaceful and knowledge-rich environment for readers of all ages.
+                Our library combines traditional library services with modern digital
+                facilities to create an enjoyable reading experience for members.
+            </p>
+            <h4 class="fw-bold">Membership Registration</h4>
+            <p>The library offers several membership types for children and adults.
+                Prospective members must complete the member registration form to obtain a library membership card.
+                Registration can be completed at the library premises.
+                Membership becomes active after successful registration and payment confirmation.
+                Every registered member will receive a unique member number and membership card.
+                All borrowers must have a valid membership account to borrow library materials.</p>
+            <div class="card p-3">
+            <div class="card-body">
+                <table class=" table  table-bordered" id="tableMembershipTypes">
+                    <thead id="tableHeadMembershipTypes" class="table-head text-center">
+                    <tr>
+                        <th>#</th>
+                        <th>Membership Type</th>
+                        <th>Membership Fee (Rs.)</th>
+                        <th>Renewal Fee (Rs.)</th>
+                        <th>Borrow Limit (Books)</th>
+                        <th>Borrow Duration (Days)</th>
+                        <th>Reservation Limit (Books)</th>
+                        <th>Reservation Duration (Days)</th>
+                        <th>Reservation Fee (Rs.)</th>
+                        <th>Delay Fine Fee (Rs.)</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBodyMembershipTypes" class="table-body text-center">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            <p class="text-center">Membership fees, Renewal fees, Reservation fees and Delay Fine fees may change in future according to library policies.</p>
+            <h4 class="fw-bold">Guarantor Policy</h4>
+            <p>
+            Applicants under 16 years of age must register with a guardian.
+            Applicants over 16 years of age must register with a guarantor.
+            The guardian or guarantor must provide NIC number & Contact information.
+            </p>
+            <h4 class="fw-bold">Member Account & Online Access</h4>
+            <p>
+            Once membership is activated, members can access the online library system using their Member number & Registered password.
+            Through the member portal, members can:
+            <ul class="custom-list">
+            <li>Search books</li>
+            <li>View borrowed books</li>
+            <li>View reservations</li>
+            <li>Check due dates</li>
+            <li>Reserve books</li>
+            <li>Renew Books</li>
+            <li>View fine charges</li>
+            <li>Receive notifications and reminders</li>
+            </ul>
+
+            </p>
+            <h4 class="fw-bold">Overdue, Lost & Damaged Books</h4>
+            <p>
+            <h6 class="fw-bold">Late Returns : </h6>
+
+            The library encourages timely returns to ensure fair access for all members.
+            Members will receive reminders before and after the due date.<br><br>
+
+            <h6 class="fw-bold">Overdue Charges : </h6>
+            If a borrowed item remains overdue for more than 30 days, the member may be temporarily suspended.<br><br>
+
+            <h6 class="fw-bold">Lost Books : </h6>
+            If a book is lost, the member must pay the replacement value determined by the library.<br><br>
+
+            <h6 class="fw-bold">Damaged Books : </h6>
+            Members are responsible for maintaining borrowed materials in good condition.
+            If a book is severely damaged repair or replacement charges may apply according to the damage type and percentage.<br><br>
+            </p>
+            <h4 class="fw-bold">Library Rules & Regulations</h4>
+            <p>
+            To maintain a peaceful reading environment, all visitors are expected to follow these rules:
+            <ul class="custom-list">
+            <li>Maintain silence inside the library</li>
+            <li>No smoking within the premises</li>
+            <li>No food or beverages inside reading areas</li>
+            <li>Handle books and library property carefully</li>
+            <li>Do not remove library materials without authorization</li>
+            <li>Respect library staff and other visitors</li>
+            </ul>
+
+                <br>
+            The library is not responsible for loss of personal belongings.<br>
+            Any member violating library policies may face temporary suspension or permanent membership cancellation.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ***************** FOOTER ***************** -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4  class="footer-title fw-bold">Opening Hours</h4>
+            <p>Monday: 9am - 5pm</p>
+            <p>Tuesday: 9am - 5pm</p>
+            <p>Wednesday: 9am - 5pm</p>
+            <p>Thursday: 9am - 5pm</p>
+            <p>Friday: 9am - 5pm</p>
+            <p>Saturday: 9am - 5pm</p>
+            <p>Sunday: Closed</p>
+            <p>Poya & Mercantile Holidays are closed </p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Quick Links</h4>
+            <p><a href="/" class="normal-text fw-bold">Home</a></p>
+            <p><a href="/opac" class="normal-text fw-bold">Catalog</a></p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Contact</h4>
+            <p>24/A, School Street, Padukka.</p>
+            <p>Email: info@bookbarlibrary.lk</p>
+            <p>Phone: 011 123 4567</p>
+        </div>
+    </div>
+
+    <p class="copyright">2026 | All Rights Reserved | Book Bar Library</p>
+</footer>
+<div th:replace="~{footerfragment::bottomFragment}"></div>
+<script src="controljs/librarypolicy.js"></script>
+</body>
+</html>

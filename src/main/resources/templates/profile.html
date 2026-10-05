@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{headerfragment::headFragment}"></head>
+<head>
+    <!-- link reservation css -->
+    <link rel="stylesheet" href="/resources/css/reservation.css">
+</head>
+
+<body>
+<div class="container-fluid">
+    <!-- link side bar -->
+    <nav th:replace="~{sidebar::sidebarFragment}"></nav>
+    <!-- title area -->
+    <div class="row mt-2 title-row align-items-center">
+
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-center">
+                <img class="icon-img me-2" src="/resources/images/loginimage.jpg" alt="">
+                <h3 class="fw-bold main-text mb-0">Profile</h3>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <button class="btn" id="edit-profile-button"
+                    onclick="window.location.replace('/editprofile')">
+                <i class="fa fa-edit me-1 normal-text fw-bold"></i> Edit Profile
+            </button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <table class="table table-bordered table-sm align-middle profile-table" >
+                <tbody id="memberDetailsTable">
+                <tr>
+                    <th style="width: 30%" class="normal-text fw-bold">Member Photo</th>
+                    <td>
+                        <img src="/resources/images/memberdefault.png" id="imgMemberPhoto" class=" member-img d-flex align-items-center justify-content-center">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Name</th>
+                    <td class="normal-text fw-bold" id="textName"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Member No</th>
+                    <td class="normal-text fw-bold" id="textMemberNo"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Member Type</th>
+                    <td class="normal-text fw-bold" id="textMemberType"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">NIC</th>
+                    <td class="normal-text fw-bold" id="textNIC"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Date of Birth</th>
+                    <td class="normal-text fw-bold" id="textDOB"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Email</th>
+                    <td class="normal-text fw-bold" id="textEmail"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Mobile No</th>
+                    <td class="normal-text fw-bold" id="textMobileNo"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Address</th>
+                    <td class="normal-text fw-bold" id="textAddress"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Guarantor Name</th>
+                    <td class="normal-text fw-bold" id="textGuarantorName"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Membership Type</th>
+                    <td class="normal-text fw-bold" id="textMembershipType"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">Start Date</th>
+                    <td class="normal-text fw-bold" id="textStartDate"></td>
+                </tr>
+                <tr>
+                    <th class="normal-text fw-bold">End Date</th>
+                    <td class="normal-text fw-bold" id="textEndDate"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+<div th:replace="~{footerfragment::bottomFragment}"></div>
+<script src="controljs/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{headerfragment::headFragment}"></head>
+<head>
+    <link rel="stylesheet" href="resources/css/website.css">
+</head>
+<body>
+
+<!-- ***************** NAVBAR **************** -->
+<header>
+    <nav class="navbar">
+        <img  src="/resources/images/library.png" id="imgLogo">
+        <div>
+            <h3 class="library-name fw-bold">Book Bar Library</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="normal-text fw-bold">Home</a></li>
+            <li><a href="/aboutus" class="normal-text fw-bold">About Us</a></li>
+            <li><a href="/librarypolicy" class="normal-text fw-bold">Library Policy</a></li>
+            <li><a href="/opac" class="normal-text fw-bold">Catalog</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="/login"><button class="btn nav-bar-button fw-bold">Member Login</button></a>
+        </div>
+    </nav>
+</header>
+
+<!-- ******************** HERO SECTION ******************** -->
+<section class="row banner">
+        <div class="col">
+            <h1 class="fw-bold">Welcome to Book Bar Library</h1>
+            <h6 class="slogan">Where You Sip Knowledge in a Bar Full of Books, Not Noise</h6>
+        </div>
+</section>
+
+<!-- ******************** QUICK FEATURES ******************** -->
+<section class="features">
+    <div class="feature-card" onclick="window.location.href='/opac'">
+        <h3 class="fw-bold">Online Catalog</h3>
+        <p >Search & Reserve Books Online</p>
+    </div>
+    <div class="feature-card" onclick="window.location.href='/librarypolicy'">
+        <h3 class="fw-bold">Membership Types</h3>
+        <p >Explore Membership Types</p>
+    </div>
+</section>
+
+<!-- ************ ABOUT SECTION ************ -->
+<section class="about">
+    <div>
+        <img src="/resources/images/aboutimage.jpg" alt="" id="imgAbout">
+    </div>
+    <div class="about-text">
+        <h2 class="fw-bold">About Our Library</h2>
+        <p>
+            The Book Bar Library, located in Padukka, is a vibrant community space dedicated to inspiring a lifelong love of reading and fostering a culture of learning.
+            Designed to be calm, welcoming, and reader-friendly, the library provides an ideal environment for individuals of all ages to explore, discover, and grow through books.
+            With a thriving membership of over 2,000 active readers, The Book Bar Library has become a trusted hub for knowledge and relaxation.
+            Our extensive collection features more than 10,000 carefully curated books across a wide range of genres, including Fantasy, Mystery, Romance, Historical Fiction, Non-Fiction, and Children’s Literature.
+            Whether you are a young reader beginning your journey, a student seeking knowledge, or an avid book lover searching for your next great read, The Book Bar Library offers something for everyone.
+            Our mission is to create a space where imagination flourishes, learning never stops, and every visitor feels at home.
+        </p>
+    </div>
+</section>
+
+<!-- ************** MEMBERSHIP PLANS ************** -->
+<section class="membership">
+    <h2 class="fw-bold">Membership Plans</h2>
+    <div class="plans">
+        <div class="plan-card" onclick="window.location.href='/childmembershiptypes'">
+            <h3 class="fw-bold">Child Membership Plans</h3>
+            <p></p>
+        </div>
+        <div class="plan-card" onclick="window.location.href='/adultmembershiptypes'">
+            <h3 class="fw-bold">Adult Membership Plans</h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ***************** FOOTER ***************** -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4  class="footer-title fw-bold">Opening Hours</h4>
+            <p>Monday: 9am - 5pm</p>
+            <p>Tuesday: 9am - 5pm</p>
+            <p>Wednesday: 9am - 5pm</p>
+            <p>Thursday: 9am - 5pm</p>
+            <p>Friday: 9am - 5pm</p>
+            <p>Saturday: 9am - 5pm</p>
+            <p>Sunday: Closed</p>
+            <p>Poya & Mercantile Holidays are closed </p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Quick Links</h4>
+            <p><a href="/" class="normal-text fw-bold">Home</a></p>
+            <p><a href="/opac" class="normal-text fw-bold">Catalog</a></p>
+        </div>
+
+        <div>
+            <h4 class="footer-title fw-bold">Contact</h4>
+            <p>24/A, School Street, Padukka.</p>
+            <p>Email: info@bookbarlibrary.lk</p>
+            <p>Phone: 011 123 4567</p>
+        </div>
+    </div>
+
+    <p class="copyright">2026 | All Rights Reserved | Book Bar Library</p>
+</footer>
+<div th:replace="~{footerfragment::bottomFragment}"></div>
+
+</body>
+</html>
