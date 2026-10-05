@@ -16,10 +16,10 @@ A web-based member portal for the Book Bar Library Management System that allows
 
 🛠️ Technologies Used
 
-Backend: Java 21, Spring Framework, Spring Boot
-Frontend: HTML5, CSS3, JavaScript, Bootstrap 5, jQuery
-Database: MySQL 8.0
-Build Tool: Gradle
-Development: IntelliJ IDEA
-Design & Modeling: Figma, Visual Paradigm
-Version Control: Git & GitHub
+- Backend: Java 21, Spring Framework, Spring Boot
+- Frontend: HTML5, CSS3, JavaScript, Bootstrap 5, jQuery
+- Database: MySQL 8.0
+- Build Tool: Gradle
+- Development: IntelliJ IDEA
+- Design & Modeling: Figma, Visual Paradigm
+- Version Control: Git & GitHub
